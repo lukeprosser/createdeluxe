@@ -1,0 +1,145 @@
+/*************************
+    GLOBAL STYLES
+*************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #404040;
+}
+
+p {
+    padding-bottom: 1em;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+img {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+  }
+
+/*************************
+    LAYOUT
+*************************/
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2em;
+}
+
+.textbox {
+    padding: 1em 2em;
+}
+
+/*************************
+    HEADER
+*************************/
+
+header {
+    background-color: #499BC9;
+    color: #fdfdfd;
+    text-align: center;
+    padding: 1em 0;
+}
+    header a {
+        color: #fdfdfd;
+        text-decoration: none;
+    }
+
+#brand {
+    padding-bottom: 0.5em;
+}
+    #brand h3 {
+        padding: 0;
+    }
+
+nav {
+    margin-top: 0.5em;
+}
+nav ul li {
+    list-style: none;
+    letter-spacing: 1px;
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #314149;
+}
+
+#line {
+    border: 1px solid #367496;
+    width: 60%;
+    margin: auto;
+    }
+
+/*************************
+    COMING SOON
+*************************/
+
+#coming-soon {
+    background-color: #1B3949;
+    color: #fdfdfd;
+    text-align: center;
+}
+
+/*************************
+    ABOUT
+*************************/
+
+#about {
+    text-align: center;
+    background-color: #fdfdfd;
+}
+
+/*************************
+    PROJECTS
+*************************/
+
+#projects {
+    background-color: #e3e3e3;
+}
+
+#projects h2 {
+    text-align: center;
+}
+
+/*************************
+    FOOTER
+*************************/
+
+footer {
+    background-color: #499BC9;
+    color: #fdfdfd;
+    padding: 2em;
+    text-align: center;
+}
+footer a {
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+
+/*************************
+    MEDIA QUERIES
+*************************/
+@media (min-width: 800px;){
+    header {
+        display: grid;
+        grid-template-columns: auto 65%;
+    }
+    
+}
+
+
+
