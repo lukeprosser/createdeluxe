@@ -8,41 +8,53 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <script defer src="js/fontawesome-all.js"></script>
 </head>
 <body>
     
     <div id="page">
 
         <header id="top"><!-- Header start -->
-                <div id="brand"><!-- Brand start -->
-                    <a href="index.html"><h1>Luke Prosser</h1></a>
-                    <h3>Junior Web Developer</h3>
-                </div><!-- Brand end -->
-                <div id="line"></div><!-- Line -->
-                <nav><!-- Nav start -->
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav><!-- Nav end -->  
+            <div class="container"><!-- Container start -->
+                <div class="navbar">
+                    <div id="brand"><!-- Brand start -->
+                        <a href="index.html"><h1>Luke Prosser</h1></a>
+                        <h3>Junior Web Developer</h3>
+                    </div><!-- Brand end -->
+                    <div id="line"></div><!-- Line -->
+                    <nav><!-- Nav start -->
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav><!-- Nav end -->
+                </div>
+            </div><!-- Container end -->
         </header><!-- Header end -->
-
+        
+        
         <main>
 
             <section id="coming-soon">
                 <div class="container">
-                    <h3>- Full Site Coming Soon -</h3>
+                    <h3>Full Site Coming Soon</h3>
                 </div>
             </section>
 
             <section id="about"><!-- About start -->
                 <div class="container"><!-- Container start -->
-                    <h2>About Me</h2>
-                    <img src="img/profile.jpg" alt="">
-                    <div class="textbox">
-                        <p>Hi I'm Luke Prosser, a Web Developer based in Newport, South Wales, UK.</p>
-                        <p>My website and portfolio are currently in development however, in the meantime, please feel free to view some of my recent projects below...</p>
+                    <div id="about-grid">
+                        <div class="wrapper">
+                            <img id="profile" src="img/profile.jpg" alt="">
+                        </div>
+                        <div class="wrapper">
+                            <h2>About Me</h2>
+                            <div class="textbox">
+                                <p>Hi I'm Luke Prosser, a Web Developer based in South Wales, UK.</p>
+                                <p>My website and portfolio are currently in development, however, in the meantime, please feel free to view some of my recent projects below...</p>
+                            </div>
+                        </div>
                     </div>
                 </div><!-- Container end -->
             </section><!-- About end -->
@@ -50,53 +62,13 @@
             <section id="projects"><!-- Projects start -->
                 <div class="container"><!-- Container start -->
                     <h2>Projects</h2>
-                    <div class="feature"><!-- Feature start -->
-                        <h3>G.L.Prosser</h3>
-                        <p>Portfolio site for Gareth Prosser, a Building Contractor in Cwmbran, South Wales.</p>
-                        <h4>Core Technologies:</h4>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                            <li>Bootstrap 3</li>
-                            <li>PHP (contact form)</li>
-                        </ul>
-                        <h4>Key Features:</h4>
-                        <ul>
-                        <li>Responsive layout with Bootstrap and Flexbox</li>
-                        <li>Learning how to manipulate the Bootstrap Navbar</li>
-                        <li>Manipulating styles within the Bootstrap framework (e.g. pseudo elements)</li>
-                        <li>Building an email contact form with data validation using PHP</li>
-                        <li>Customising one-page anchor navigation</li>
-                        <li>Installing and configuring Magnific Popup with jQuery</li>
-                        <li>Building a 'Load More' button with JavaScript and jQuery to load hidden content</li>
-                        </ul>
-                    </div><!-- Feature end -->
-                    <div class="feature"><!-- Feature start -->
-                        <h3>RexyDog</h3>
-                        <p>This site is all about my dog, Rex, a fun-loving Border Terrier in need of a space to show off his pictures.</p>
-                        <h4>Core Technologies:</h4>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                        </ul>
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Basic markup</li>
-                            <li>HTML5 semantic layout</li>
-                            <li>CSS Style experimentation</li>
-                            <li>Mobile first design</li>
-                            <li>CSS Grid</li>
-                            <li>Nested grids</li>
-                            <li>Responsive layout with media queries</li>
-                            <li>JS Lightbox</li>
-                            <li>Floating back-to-top navigation</li>
-                        </ul>
-                    </div><!-- Feature end -->
-                    <p>For more information on these projects please feel free to <a href="https://github.com/lukeprosser">visit my GitHub profile</a>.</p>
+                    <div id="project-grid"><!-- Project Grid start -->
+                        <a href="https://glprosser.com" target="_blank"><img class="project-pic" src="img/glprosser-project.png" alt=""></a>
+                        <a href="https://lukeprosser.github.io/rexydog" target="_blank"><img class="project-pic" src="img/rex-project.png" alt=""></a>
+                    </div><!-- Project Grid end -->
+                    <div class="info">
+                        <p>For more information on these projects and a breakdown of the technologies implemented, please <a href="https://github.com/lukeprosser" target="_blank">visit my GitHub profile</a>.</p>
+                    </div>
                 </div><!-- Container end -->
             </section><!-- Projects end -->
 
@@ -104,34 +76,15 @@
                 <div class="container"><!-- Container start -->
                     <h2>Contact</h2>
                     <div class="links">
-                        <a href="mailto:lukesprosser@gmail.com"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Email</a>
-                        <a href="https://github.com/lukeprosser"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>GitHub</a>
-                        <a href="https://www.linkedin.com/in/lukeprosser/"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>LinkedIn</a>
+                        <a href="mailto:lukesprosser@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-lg"></i> Email</a>
+                        <a href="https://github.com/lukeprosser" target="_blank"><i class="fab fa-github-square fa-lg"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/lukeprosser/" target="_blank"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
                     </div>
-                    <div id="contact-form"><!-- Contact Form Container start -->
-                            <p>In the meantime, feel free to get in touch with me here:</p>
-                            <div id="form-messages"></div>
-                            <form id="ajax-contact" name="contact" action="mailer.php" method="POST" id="form"><!-- Contact Form start -->
-                                <div class="form-group">
-                                <input type="text" name="title" class="form-control hidden">
-                                </div>
-                                <div class="form-group">
-                                <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" required>
-                                </div>
-                                <div class="form-group">
-                                <input type="email" id="email" name="email" class="email form-control" placeholder="Email Address" required>
-                                </div>
-                                <div class="form-group">
-                                <textarea id="message" name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-danger">Submit</button>
-                            </form><!-- Contact Form end -->
-                        </div><!-- Contact Form Container end -->
                 </div><!-- Container end -->
             </section><!-- Contact end -->
 
             <footer>
-                <a href="#top">Back to top</a>
+                <a href="#top">Back To Top</a>
             </footer>
 
         </main>

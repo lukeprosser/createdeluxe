@@ -15,17 +15,12 @@ body {
 
 p {
     padding-bottom: 1em;
+    line-height: 1.5em;
 }
 
 ul {
     list-style-position: inside;
 }
-
-img {
-    display: block;
-    width: 60%;
-    margin: 1em auto;
-  }
 
 /*************************
     LAYOUT
@@ -39,6 +34,13 @@ img {
 
 .textbox {
     padding: 1em 2em;
+}
+
+.info {
+    padding: 1em 2em;
+    max-width: 500px;
+    margin: 3em auto 1em auto;
+    border: 2px solid #1B3949;
 }
 
 /*************************
@@ -58,24 +60,30 @@ header {
 
 #brand {
     padding-bottom: 0.5em;
+    letter-spacing: 1px;
 }
-    #brand h3 {
-        padding: 0;
-    }
+
+#brand h3 {
+    font-weight: 500;
+}
+
+#tagline {
+    padding: 0;
+}
 
 nav {
     margin-top: 0.5em;
 }
-nav ul li {
-    list-style: none;
-    letter-spacing: 1px;
-}
-nav ul li a {
-    text-decoration: none;
-}
-nav ul li a:hover {
-    color: #314149;
-}
+    nav ul li {
+        list-style: none;
+        letter-spacing: 1px;
+    }
+    nav ul li a {
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+        color: #314149;
+    }
 
 #line {
     border: 1px solid #367496;
@@ -88,10 +96,16 @@ nav ul li a:hover {
 *************************/
 
 #coming-soon {
-    background-color: #1B3949;
+    background-color: #367496;
     color: #fdfdfd;
     text-align: center;
 }
+    #coming-soon h3 {
+        font-size: 1em;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
 /*************************
     ABOUT
@@ -102,17 +116,64 @@ nav ul li a:hover {
     background-color: #fdfdfd;
 }
 
+img#profile {
+    display: block;
+    width: 60%;
+    max-width: 300px;
+    margin: 1em auto;
+  }
+
 /*************************
     PROJECTS
 *************************/
 
 #projects {
-    background-color: #e3e3e3;
-}
-
-#projects h2 {
+    background-color: #efefef;
     text-align: center;
 }
+    #projects a {
+        font-weight: 600;
+    }
+    #projects a:visited {
+        color: #404040;
+    }
+    #projects a:hover {
+        color: #499BC9;
+    }
+
+img.project-pic {
+    display: block;
+    width: 90%;
+    margin: 2em auto;
+    max-width: 400px;
+  }
+    img.project-pic:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+/*************************
+    CONTACT
+*************************/
+
+#contact {
+    text-align: center;
+}
+
+.links {
+    padding: 2em;
+}
+    .links a {
+        display: block;
+        padding: 0.5em;
+        text-decoration: none;
+    }
+    .links a:visited {
+        color: #404040;
+    }
+    .links a:hover {
+        color: #499BC9;
+    }
 
 /*************************
     FOOTER
@@ -124,21 +185,74 @@ footer {
     padding: 2em;
     text-align: center;
 }
-footer a {
-    color: #fdfdfd;
-    text-decoration: none;
-}
+    footer a {
+        color: #fdfdfd;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
 
 /*************************
     MEDIA QUERIES
 *************************/
-@media (min-width: 800px;){
-    header {
-        display: grid;
-        grid-template-columns: auto 65%;
+
+/* Desktop */
+@media (min-width: 800px) {
+
+    header div.container {
+        padding: 0.5em;
     }
-    
+
+    #brand {
+        text-align: left;
+    }
+    #brand h3 {
+        font-size: 1em;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: 65% auto;
+    }
+
+    nav {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    nav ul li {
+        display: inline-block;
+        padding: 0 1em;
+    }
+
+    #line {
+        display: none;
+    }
+
+    #about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    img#profile {
+        display: block;
+        width: 60%;
+        margin: 1em auto;
+      }
+ 
+    #project-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        /* grid-gap: 10px; */
+    }
+
+    .info {
+        max-width: 700px;
+        margin: 1em auto 1em auto;
+    }
 }
 
 
