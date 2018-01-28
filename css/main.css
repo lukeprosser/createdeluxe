@@ -41,6 +41,7 @@ ul {
     max-width: 500px;
     margin: 3em auto 1em auto;
     border: 2px solid #1B3949;
+    border-radius: 5px;
 }
 
 /*************************
@@ -62,10 +63,9 @@ header {
     padding-bottom: 0.5em;
     letter-spacing: 1px;
 }
-
-#brand h3 {
-    font-weight: 500;
-}
+    #brand h3 {
+        font-weight: 500;
+    }
 
 #tagline {
     padding: 0;
@@ -92,15 +92,15 @@ nav {
     }
 
 /*************************
-    COMING SOON
+    BANNER
 *************************/
 
-#coming-soon {
+#banner {
     background-color: #367496;
     color: #fdfdfd;
     text-align: center;
 }
-    #coming-soon h3 {
+    #banner h3 {
         font-size: 1em;
         font-weight: 500;
         text-transform: uppercase;
@@ -121,6 +121,7 @@ img#profile {
     width: 60%;
     max-width: 300px;
     margin: 1em auto;
+    border-radius: 5px;
   }
 
 /*************************
@@ -133,6 +134,7 @@ img#profile {
 }
     #projects a {
         font-weight: 600;
+        color: #404040;
     }
     #projects a:visited {
         color: #404040;
@@ -146,6 +148,7 @@ img.project-pic {
     width: 90%;
     margin: 2em auto;
     max-width: 400px;
+    border-radius: 5px;
   }
     img.project-pic:hover {
         opacity: 0.5;
@@ -167,12 +170,14 @@ img.project-pic {
         display: block;
         padding: 0.5em;
         text-decoration: none;
+        color: #404040;
     }
     .links a:visited {
         color: #404040;
     }
     .links a:hover {
         color: #499BC9;
+
     }
 
 /*************************
@@ -188,7 +193,9 @@ footer {
     footer a {
         color: #fdfdfd;
         text-decoration: none;
-        font-weight: bold;
+    }
+    footer a:hover {
+        color: #314149;
     }
 
 
@@ -196,19 +203,21 @@ footer {
     MEDIA QUERIES
 *************************/
 
-/* Desktop */
+/* DESKTOP */
 @media (min-width: 800px) {
 
+    /* HEADER */
     header div.container {
         padding: 0.5em;
     }
 
     #brand {
         text-align: left;
+        padding-left: 1em;
     }
-    #brand h3 {
-        font-size: 1em;
-    }
+        #brand h3 {
+            font-size: 1em;
+        }
 
     .navbar {
         display: grid;
@@ -221,15 +230,16 @@ footer {
         align-items: center;
         justify-content: flex-end;
     }
-    nav ul li {
-        display: inline-block;
-        padding: 0 1em;
-    }
+        nav ul li {
+            display: inline-block;
+            padding: 0 0.5em;
+        }
 
     #line {
         display: none;
     }
 
+    /* ABOUT */
     #about-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -241,7 +251,8 @@ footer {
         width: 60%;
         margin: 1em auto;
       }
- 
+    
+    /* PROJECTS */
     #project-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -254,6 +265,3 @@ footer {
         margin: 1em auto 1em auto;
     }
 }
-
-
-
