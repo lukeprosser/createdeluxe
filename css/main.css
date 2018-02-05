@@ -39,7 +39,7 @@ ul {
 .info {
     padding: 1em 2em;
     max-width: 500px;
-    margin: 3em auto 1em auto;
+    margin: 1em auto 1em auto;
     border: 2px solid #1B3949;
     border-radius: 5px;
 }
@@ -143,10 +143,18 @@ img#profile {
         color: #499BC9;
     }
 
-img.project-pic {
+#project-grid {
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+#project-grid a {
     display: block;
-    width: 90%;
-    margin: 2em auto;
+    margin: 1em;
+}
+
+img.project-pic {
+    width: 100%;
     max-width: 400px;
     border-radius: 5px;
   }
@@ -258,7 +266,10 @@ footer {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         /* grid-gap: 10px; */
+        padding: 1em;
     }
+
+
 
     .info {
         max-width: 700px;
